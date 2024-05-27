@@ -151,8 +151,8 @@ namespace Project3 {
 			for (int i = 0; i < currentIndex; i++) {
 				head1 = dataArray[i, 2]->Substring(0, dataArray[i, 2]->Length - 2);
 				tail1 = dataArray[i, 2]->Substring(dataArray[i, 2]->Length - 2);
-				head2 = dataArray[i, 2]->Substring(0, dataArray[i, 3]->Length - 2);
-				tail2 = dataArray[i, 2]->Substring(dataArray[i, 3]->Length - 2);
+				head2 = dataArray[i, 3]->Substring(0, dataArray[i, 3]->Length - 2);
+				tail2 = dataArray[i, 3]->Substring(dataArray[i, 3]->Length - 2);
 				lb_ReserveState->Items->Add("—\–ñ: " +
 					dataArray[i, 1] + ", " +
 					head1 + ":" +
