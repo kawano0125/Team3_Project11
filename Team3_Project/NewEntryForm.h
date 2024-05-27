@@ -122,6 +122,7 @@ namespace Project3 {
 			this->b_EntryReturn->TabIndex = 5;
 			this->b_EntryReturn->Text = L"戻る";
 			this->b_EntryReturn->UseVisualStyleBackColor = true;
+			this->b_EntryReturn->Click += gcnew System::EventHandler(this, &NewEntryForm::b_EntryReturn_Click);
 			// 
 			// NewEntryForm
 			// 
@@ -169,5 +170,8 @@ namespace Project3 {
 			System::Diagnostics::Debug::WriteLine("---エラーメッセージ---\n" + ex->Message);
 		}
 	}
-	};
+	private: System::Void b_EntryReturn_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+};
 }

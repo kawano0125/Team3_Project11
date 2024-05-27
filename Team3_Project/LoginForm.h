@@ -62,7 +62,8 @@ namespace Project3 {
 		/// 必要なデザイナー変数です。
 		/// </summary>
 		System::ComponentModel::Container^ components;
-		int Index = 0;
+	private: System::Windows::Forms::Label^ label1;
+		   int Index = 0;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -78,6 +79,7 @@ namespace Project3 {
 			this->b_AllRoom = (gcnew System::Windows::Forms::Button());
 			this->b_NewEntry = (gcnew System::Windows::Forms::Button());
 			this->b_Login = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// l_UserName
@@ -104,7 +106,7 @@ namespace Project3 {
 			// 
 			// tb_UserName
 			// 
-			this->tb_UserName->Location = System::Drawing::Point(209, 187);
+			this->tb_UserName->Location = System::Drawing::Point(209, 194);
 			this->tb_UserName->Name = L"tb_UserName";
 			this->tb_UserName->Size = System::Drawing::Size(308, 22);
 			this->tb_UserName->TabIndex = 2;
@@ -120,7 +122,7 @@ namespace Project3 {
 			// 
 			this->b_AllRoom->Font = (gcnew System::Drawing::Font(L"MS UI Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(128)));
-			this->b_AllRoom->Location = System::Drawing::Point(274, 50);
+			this->b_AllRoom->Location = System::Drawing::Point(324, 104);
 			this->b_AllRoom->Name = L"b_AllRoom";
 			this->b_AllRoom->Size = System::Drawing::Size(114, 51);
 			this->b_AllRoom->TabIndex = 4;
@@ -132,7 +134,7 @@ namespace Project3 {
 			// 
 			this->b_NewEntry->Font = (gcnew System::Drawing::Font(L"MS UI Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(128)));
-			this->b_NewEntry->Location = System::Drawing::Point(403, 51);
+			this->b_NewEntry->Location = System::Drawing::Point(444, 105);
 			this->b_NewEntry->Name = L"b_NewEntry";
 			this->b_NewEntry->Size = System::Drawing::Size(114, 50);
 			this->b_NewEntry->TabIndex = 5;
@@ -152,11 +154,23 @@ namespace Project3 {
 			this->b_Login->UseVisualStyleBackColor = true;
 			this->b_Login->Click += gcnew System::EventHandler(this, &LoginForm::b_Login_Click);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"ＭＳ ゴシック", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(128)));
+			this->label1->Location = System::Drawing::Point(43, 45);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(354, 30);
+			this->label1->TabIndex = 7;
+			this->label1->Text = L"研修室予約管理システム";
+			// 
 			// LoginForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(582, 553);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->b_Login);
 			this->Controls->Add(this->b_NewEntry);
 			this->Controls->Add(this->b_AllRoom);
@@ -165,7 +179,7 @@ namespace Project3 {
 			this->Controls->Add(this->l_UserPassword);
 			this->Controls->Add(this->l_UserName);
 			this->Name = L"LoginForm";
-			this->Text = L"LoginForm";
+			this->Text = L"ログインページ";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

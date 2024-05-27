@@ -64,8 +64,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MydataForm.resx">
       <DependentUpon>MydataForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEntryForm.resx">
+      <DependentUpon>NewEntryForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomDatailForm.resx">
       <DependentUpon>RoomDatailForm.h</DependentUpon>
